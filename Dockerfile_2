@@ -1,0 +1,6 @@
+FROM nginx:stable
+COPY bc-2 /var/www/html
+COPY lb-2/localhost /etc/nginx/sites-avilable/
+COPY lb-2/localhost /etc/nginx/sites-enabled/
+COPY lb-2/nginx.conf /etc/nginx/nginx.conf
+COPY lb-2/localhost.conf /etc/nginx/conf.d/default.conf

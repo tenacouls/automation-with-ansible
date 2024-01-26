@@ -3,6 +3,7 @@ services:
     image: nginx-h
     ports:
       - "80:80"
-    deploy:
-      mode: replicated
-      replicas: 2
+  nginx-host_2:
+    image: nginx-h2
+    ports:
+      - "90:90"
